@@ -20,10 +20,9 @@ export function WhatsappFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp com a Ronale Transporte"
-      className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105"
+      className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-105"
     >
-      <WhatsappLogo className="h-6 w-6" />
-      <span className="hidden sm:inline">WhatsApp</span>
+      <WhatsappLogo className="h-8 w-8" />
     </a>
   )
 }
