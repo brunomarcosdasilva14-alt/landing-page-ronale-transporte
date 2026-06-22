@@ -1,10 +1,9 @@
 export const site = {
   name: 'Ronale Transporte',
-  phoneDisplay: '(19) 99999-9999',
+  phoneDisplay: '(19) 98805-0719',
   // Número usado no link do WhatsApp (formato internacional, sem símbolos)
-  whatsappNumber: '5519999999999',
-  whatsappMessage:
-    'Olá! Vim pelo site e gostaria de saber mais sobre a Rede de Despacho da Ronale Transporte.',
+  whatsappNumber: '5519988050719',
+  whatsappMessage: 'Olá,vim pelo site e gostaria de saber mais!',
   email: 'contato@ronaletransporte.com.br',
   address: 'Mococa - SP',
   instagram: 'https://instagram.com',

@@ -13,7 +13,7 @@ export function AreaAtuacao() {
             De Mococa-SP para todo o Brasil
           </h2>
           <p className="text-pretty leading-relaxed text-primary-foreground/80">
-            Nossa base operacional está estrategicamente localizada em
+            Nossa base operacional está  localizada em
             Mococa-SP, no nordeste paulista, o que nos permite atender com
             agilidade a região e conectar cargas a destinos em todo o território
             nacional.
