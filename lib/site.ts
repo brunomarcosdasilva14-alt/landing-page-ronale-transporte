@@ -6,7 +6,7 @@ export const site = {
 
   whatsappMessage: 'Olá, vim pelo site e gostaria de saber mais sobre a rede de despacho!',
 
-  email: 'contato@ronaletransporte.com.br',
+  email: 'ronaletransporte@gmail.com',
   address: 'Mococa - SP',
 }
 
