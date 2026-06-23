@@ -30,7 +30,7 @@ export function SiteHeader() {
             width={10}
             height={8}
             sizes="100vw"
-            className="h-8 w-auto object-contain md:h-9"
+            className="h-12 w-auto object-contain md:h-11"
             priority
           />
         </a>
