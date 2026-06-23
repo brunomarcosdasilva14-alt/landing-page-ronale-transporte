@@ -25,12 +25,12 @@ export function SiteHeader() {
         
         <a href="/" className="flex items-center">
           <Image
-            src="/images/logo.png"
+            src="/images/logo.png"a
             alt="Ronale Transporte"
             width={10}
             height={8}
             sizes="100vw"
-            className="h-6 w-auto object-contain"
+            className="h-7 w-auto object-contain"
             priority
           />
         </a>
