@@ -25,8 +25,8 @@ export function SiteHeader() {
           <Image
             src="/images/logo.png"
             alt="Ronale Transporte"
-            width={30}
-            height={30}
+            width={10}
+            height={10}
             priority
             className="h-auto w-auto"
           />
