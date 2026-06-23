@@ -19,10 +19,10 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur">
       
-      {/* CONTAINER PRINCIPAL */}
+     
       <div className="container flex h-16 items-center justify-between">
         
-        {/* LOGO PEQUENA */}
+        
         <a href="/" className="flex items-center">
           <Image
             src="/images/logo.png"
@@ -35,7 +35,7 @@ export function SiteHeader() {
           />
         </a>
 
-        {/* MENU DESKTOP */}
+      
         <nav className="hidden items-center gap-7 md:flex">
           {navItems.map((item) => (
             <a
@@ -48,7 +48,7 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        {/* BOTÃO */}
+     
         <a
           href={whatsappLink}
           target="_blank"
@@ -59,7 +59,7 @@ export function SiteHeader() {
           Fale Conosco
         </a>
 
-        {/* MENU MOBILE BOTÃO */}
+        
         <button
           type="button"
           className="inline-flex items-center justify-center rounded-md p-2 text-primary md:hidden"
@@ -69,7 +69,7 @@ export function SiteHeader() {
         </button>
       </div>
 
-      {/* MENU MOBILE */}
+      
       {open && (
         <nav className="border-t border-border bg-background px-4 py-3 md:hidden">
           <ul className="flex flex-col gap-1">
