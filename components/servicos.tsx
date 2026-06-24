@@ -49,7 +49,7 @@ export function Servicos() {
             Nossos Serviços
           </span>
           <h2 className="mt-2 font-heading text-2xl font-bold text-balance text-primary sm:text-3xl">
-            Soluções completas em logística e despacho
+            Soluções completas em Transporte e Rede de Despacho.
           </h2>
           <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">
             Tudo o que a sua transportadora precisa para operar com mais
