@@ -20,7 +20,7 @@ const siteUrl = 'https://ronaletransporte.com.br'
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title:
-    'Ronale Transporte | Rede de Despacho para Transportadoras em Mococa-SP',
+    'Ronale Transporte | Transportadora em Mococa-SP',
   description:
     'Rede de Despacho da Ronale Transporte em Mococa-SP: gestão de fretes, monitoramento logístico e distribuição de cargas com cobertura nacional. Solicite sua cotação.',
   keywords: [
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: siteUrl,
     siteName: 'Ronale Transporte',
-    title: 'Ronale Transporte | Rede de Despacho em Mococa-SP',
+    title: 'Ronale Transporte | Transportadora e Rede de Despacho em Mococa-SP',
     description:
-      'Rede de Despacho com gestão de fretes, monitoramento logístico e cobertura nacional. Base em Mococa-SP.',
+      'Transportadora e Rede de Despacho com gestão de fretes, monitoramento logístico e cobertura nacional. Base em Mococa-SP.',
     images: [
       {
         url: '/images/hero-caminhao-mapa.png',
@@ -83,7 +83,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} bg-background`}
     >
       <head>
-        {/* Google Analytics GA4 */}
+       
         {process.env.NODE_ENV === 'production' && (
           <>
             <Script
