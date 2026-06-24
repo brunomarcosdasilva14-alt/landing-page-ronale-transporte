@@ -18,13 +18,13 @@ export function Hero() {
           <div className="flex flex-col gap-6">
             
             <h1 className="font-heading text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
-              Rede de Despacho para Transportadoras em Todo o Brasil
+              Transportadora e Rede de Despacho em Todo o Brasil
             </h1>
 
             <p className="max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-              Conectamos transportadoras a uma estrutura completa de despacho,
+              Somos uma transportadora completa que conecta parceiros a uma estrutura eficiente de despacho,
               gestão de fretes e distribuição de cargas com cobertura nacional.
-              Mais agilidade, segurança e controle em cada operação.
+              Oferecemos mais agilidade, segurança e controle em cada operação, do início ao destino final.
             </p>
 
   
