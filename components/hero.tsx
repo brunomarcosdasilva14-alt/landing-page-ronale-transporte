@@ -6,15 +6,12 @@ import { whatsappLink } from '@/lib/site'
 
 export function Hero() {
   return (
-    <section className="bg-[#1f3a6d] text-white py-16 lg:py-24">
-      
-    
+    <section className="relative w-full bg-[#0B0F1A] text-white py-16">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         
-       
         <div className="grid items-center gap-10 lg:grid-cols-2">
           
-          
+       
           <div className="flex flex-col gap-6">
             
             <h1 className="font-heading text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
@@ -27,7 +24,6 @@ export function Hero() {
               Oferecemos mais agilidade, segurança e controle em cada operação, do início ao destino final.
             </p>
 
-  
             <div className="flex flex-col gap-3 sm:flex-row">
               <a
                 href={whatsappLink}
@@ -48,7 +44,6 @@ export function Hero() {
               </a>
             </div>
 
-            
             <div className="mt-6 grid grid-cols-3 gap-6 border-t border-white/20 pt-6 max-w-md">
               <div>
                 <p className="font-heading text-2xl font-bold">Nacional</p>
@@ -66,12 +61,12 @@ export function Hero() {
 
           </div>
 
-         
+        
           <div className="relative">
             <div className="overflow-hidden rounded-xl border border-white/10 shadow-2xl">
               <Image
-                src="/images/hero-caminhao-mapa.png"
-                alt="Caminhão com rotas logísticas pelo Brasil"
+                src="/images/hero.png"
+                alt="Caminhões da Ronale Transportes"
                 width={720}
                 height={540}
                 priority
