@@ -1,3 +1,5 @@
+'use client'
+
 import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
 import type { Metadata, Viewport } from 'next'
@@ -19,8 +21,7 @@ const siteUrl = 'https://ronaletransporte.com.br'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title:
-    'Ronale Transporte | Transportadora em Mococa-SP',
+  title: 'Ronale Transporte | Transportadora em Mococa-SP',
   description:
     'Rede de Despacho da Ronale Transporte em Mococa-SP: gestão de fretes, monitoramento logístico e distribuição de cargas com cobertura nacional. Solicite sua cotação.',
   keywords: [
@@ -43,13 +44,13 @@ export const metadata: Metadata = {
     siteName: 'Ronale Transporte',
     title: 'Ronale Transporte | Transportadora e Rede de Despacho em Mococa-SP',
     description:
-      'Transportadora e Rede de Despacho com gestão de fretes, monitoramento logístico e cobertura nacional. Base em Mococa-SP.',
+      'Transportadora e Rede de Despacho com gestão de fretes, monitoramento logístico e cobertura nacional.',
     images: [
       {
-        url: '/images/hero-caminhao-mapa.png',
+        url: '/images/hero.png',
         width: 1200,
         height: 630,
-        alt: 'Caminhão da Ronale Transporte com mapa de rotas pelo Brasil',
+        alt: 'Caminhões da Ronale Transporte',
       },
     ],
   },
@@ -58,7 +59,7 @@ export const metadata: Metadata = {
     title: 'Ronale Transporte | Rede de Despacho em Mococa-SP',
     description:
       'Rede de Despacho com gestão de fretes, monitoramento logístico e cobertura nacional.',
-    images: ['/images/hero-caminhao-mapa.png'],
+    images: ['/images/hero.png'], 
   },
   robots: {
     index: true,
@@ -83,26 +84,29 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} bg-background`}
     >
       <head>
-       
-        {process.env.NODE_ENV === 'production' && (
-          <>
-            <Script
-              src="https://www.googletagmanager.com/gtag/js?id=G-2FG4R6KKES"
-              strategy="afterInteractive"
-            />
-            <Script id="ga4" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-2FG4R6KKES');
-              `}
-            </Script>
-          </>
-        )}
+    
+        <Script id="gtm-head" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id=GTM-K29LSMFZ'+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-K29LSMFZ');
+          `}
+        </Script>
       </head>
 
       <body>
+      
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K29LSMFZ"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+
         {children}
         <Analytics />
       </body>
