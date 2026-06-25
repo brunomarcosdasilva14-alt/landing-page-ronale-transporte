@@ -40,7 +40,7 @@ export function Hero() {
                 className="inline-flex items-center justify-center gap-2 rounded-md border border-white/30 bg-white/10 px-6 py-3 text-base font-semibold text-white transition hover:bg-white/20"
               >
                 <FileText className="h-5 w-5" />
-                Solicitar Cotação
+                Solicitar Orçamento
               </a>
             </div>
 
