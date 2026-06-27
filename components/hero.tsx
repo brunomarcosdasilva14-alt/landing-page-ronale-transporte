@@ -32,7 +32,7 @@ export function Hero() {
                 className="inline-flex items-center justify-center gap-2 rounded-md bg-brand-red px-6 py-3 text-base font-semibold text-white transition hover:opacity-90"
               >
                 <MessageCircle className="h-5 w-5" />
-                Falar no WhatsApp
+                Falar conosco!
               </a>
 
               <a
