@@ -14,10 +14,10 @@ const depoimentos = [
       'Atendimento rápido e transparente. Sentimos segurança em cada operação e os prazos são realmente cumpridos.',
   },
   {
-    nome: 'Rafael Lima',
-    cargo: 'Diretor de operações',
+    nome: 'Rafael Carvalho',
+    cargo: 'Motorista',
     texto:
-      'Parceria que fez diferença no nosso negócio. A cobertura nacional ampliou o alcance da nossa transportadora.',
+      'Parceria que fez diferença no seu negócio!.',
   },
 ]
 
