@@ -44,7 +44,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable}`}
     >
       <head>
-        {/* GOOGLE TAG MANAGER (HEAD) */}
+  
         <Script id="gtm-head" strategy="beforeInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];
@@ -60,7 +60,7 @@ export default function RootLayout({
       </head>
 
       <body>
-        {/* GOOGLE TAG MANAGER (NOSCRIPT) */}
+
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-K29LSMFZ"
