@@ -15,7 +15,7 @@ const jsonLd = {
   '@type': 'MovingCompany',
   name: 'Ronale Transporte',
   description:
-    'Rede de Despacho para transportadoras em Mococa-SP, com gestão de fretes, monitoramento logístico e distribuição de cargas com cobertura nacional.',
+    'Transportadora completa em Mococa-SP, com gestão de fretes, monitoramento logístico e distribuição de cargas com cobertura nacional.',
   areaServed: 'BR',
   address: {
     '@type': 'PostalAddress',
