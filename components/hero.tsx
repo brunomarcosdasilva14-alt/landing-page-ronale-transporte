@@ -19,7 +19,7 @@ export function Hero() {
             </h1>
 
             <p className="max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-              Somos uma transportadora completa que conecta parceiros a uma estrutura eficiente de despacho,
+              Somos uma transportadora completa e conectamos parceiros a uma estrutura eficiente de despacho,
               gestão de fretes e distribuição de cargas com cobertura nacional.
               Oferecemos mais agilidade, segurança e controle em cada operação, do início ao destino final.
             </p>
