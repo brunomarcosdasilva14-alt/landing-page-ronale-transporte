@@ -10,8 +10,7 @@ export function CtaFinal() {
         </h2>
         <p className="max-w-2xl text-pretty leading-relaxed text-primary-foreground/90 sm:text-lg">
           Fale agora com a equipe da Ronale Transporte e descubra como nossa
-          Rede de Despacho pode trazer mais agilidade, segurança e cobertura
-          nacional para a sua operação.
+          Rede de Despacho pode trazer mais agilidade e segurança para a sua operação.
         </p>
 
         <div className="flex flex-col gap-3 sm:flex-row">
