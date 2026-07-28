@@ -39,7 +39,7 @@ export function Beneficios() {
       <div className="mx-auto max-w-6xl px-4">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <span className="text-sm font-semibold uppercase tracking-wide text-brand-red">
-            Por que a Ronale
+            Por que escolher a Ronale Transporte
           </span>
           <h2 className="mt-2 font-heading text-2xl font-bold text-balance text-primary sm:text-3xl">
             Benefícios que fortalecem a sua operação
