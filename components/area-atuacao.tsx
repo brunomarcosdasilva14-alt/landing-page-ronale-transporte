@@ -35,7 +35,7 @@ export function AreaAtuacao() {
               <div>
                 <h3 className="font-heading font-bold">Cobertura nacional</h3>
                 <p className="text-sm text-primary-foreground/75">
-                  Rede de despacho que conecta sua transportadora a destinos em
+                  Rede de Despacho que conecta sua transportadora a destinos em
                   todo o Brasil.
                 </p>
               </div>
