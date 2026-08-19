@@ -62,10 +62,10 @@ export function Hero() {
           <div className="relative">
             <div className="overflow-hidden rounded-xl border border-white/10 shadow-2xl">
               <Image
-                src="/images/hero.png"
-                alt="Caminhões da Ronale Transportes"
-                width={720}
-                height={540}
+                src="/Nayara.jpeg"
+                alt="Nayara, representante da Ronale Transportes"
+                width={504}
+                height={800}
                 priority
                 className="h-full w-full object-cover"
               />
