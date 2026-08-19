@@ -5,7 +5,7 @@ import { whatsappLink } from '@/lib/site'
 
 export function Hero() {
   return (
-    <section className="relative w-full bg-[#0B0F1A] py-16 text-white">
+    <section className="relative w-full bg-[#172F65] py-16 text-white">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         
         <div className="grid items-center gap-10 lg:grid-cols-2">
