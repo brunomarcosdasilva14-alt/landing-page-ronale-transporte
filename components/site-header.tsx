@@ -18,9 +18,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/95 backdrop-blur-md">
-      
       <div className="container flex h-[72px] items-center justify-between">
-
 
         <a
           href="/"
@@ -37,32 +35,28 @@ export function SiteHeader() {
           />
         </a>
 
-
         <nav className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="relative text-sm font-medium text-foreground/80 transition-colors duration-200 hover:text-brand-red"
+              className="text-sm font-medium text-foreground/80 transition-colors duration-200 hover:text-brand-red"
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-
         <a
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="group hidden items-center gap-2.5 rounded-lg bg-brand-red px-5 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:brightness-95 md:inline-flex"
+          className="hidden items-center gap-2 rounded-md border border-brand-red bg-brand-red px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-transparent hover:text-brand-red md:inline-flex"
         >
-          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/15">
-            <Phone className="h-3.5 w-3.5 transition-transform duration-200 group-hover:scale-110" />
-          </span>
-
-          <span>Solicitar cotação</span>
+          <Phone className="h-4 w-4" />
+          Solicitar cotação
         </a>
+
         <button
           type="button"
           aria-label={open ? 'Fechar menu' : 'Abrir menu'}
@@ -81,7 +75,7 @@ export function SiteHeader() {
       {open && (
         <nav className="border-t border-border/60 bg-background px-4 py-4 shadow-lg md:hidden">
           <ul className="flex flex-col gap-1">
-            
+
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
@@ -99,12 +93,9 @@ export function SiteHeader() {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2.5 rounded-lg bg-brand-red px-4 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all duration-200 hover:opacity-90"
+                className="flex items-center justify-center gap-2 rounded-md border border-brand-red bg-brand-red px-4 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-transparent hover:text-brand-red"
               >
-                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/15">
-                  <Phone className="h-3.5 w-3.5" />
-                </span>
-
+                <Phone className="h-4 w-4" />
                 Solicitar cotação
               </a>
             </li>
