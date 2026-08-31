@@ -17,83 +17,98 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur">
+    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/95 backdrop-blur-md">
       
-     
-      <div className="container flex h-16 items-center justify-between">
-        
-        
-        <a href="/" className="flex items-center">
+      <div className="container flex h-[72px] items-center justify-between">
+
+
+        <a
+          href="/"
+          className="flex items-center transition-opacity duration-200 hover:opacity-90"
+        >
           <Image
-            src="/images/logo.png"a
+            src="/images/logo.png"
             alt="Ronale Transporte"
-            width={10}
-            height={8}
-            sizes="100vw"
-            className="h-16 w-auto object-contain md:h-15"
+            width={160}
+            height={60}
+            sizes="160px"
+            className="h-14 w-auto object-contain"
             priority
           />
         </a>
 
-      
-        <nav className="hidden items-center gap-7 md:flex">
+
+        <nav className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-foreground transition-colors hover:text-brand-red"
+              className="relative text-sm font-medium text-foreground/80 transition-colors duration-200 hover:text-brand-red"
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-     
+
         <a
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden items-center gap-2 rounded-md bg-brand-red px-4 py-2 text-sm font-semibold text-primary-foreground transition hover:opacity-90 md:inline-flex"
+          className="group hidden items-center gap-2.5 rounded-lg bg-brand-red px-5 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:brightness-95 md:inline-flex"
         >
-          <Phone className="h-4 w-4" />
-          Fale Conosco
-        </a>
+          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/15">
+            <Phone className="h-3.5 w-3.5 transition-transform duration-200 group-hover:scale-110" />
+          </span>
 
-        
+          <span>Solicitar cotação</span>
+        </a>
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-primary md:hidden"
+          aria-label={open ? 'Fechar menu' : 'Abrir menu'}
+          aria-expanded={open}
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-background text-primary transition-colors hover:bg-muted md:hidden"
           onClick={() => setOpen(!open)}
         >
-          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {open ? (
+            <X className="h-5 w-5" />
+          ) : (
+            <Menu className="h-5 w-5" />
+          )}
         </button>
       </div>
 
-      
       {open && (
-        <nav className="border-t border-border bg-background px-4 py-3 md:hidden">
+        <nav className="border-t border-border/60 bg-background px-4 py-4 shadow-lg md:hidden">
           <ul className="flex flex-col gap-1">
+            
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-md px-2 py-2 text-sm font-medium text-foreground hover:bg-muted"
+                  className="block rounded-lg px-3 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted hover:text-brand-red"
                 >
                   {item.label}
                 </a>
               </li>
             ))}
-            <li>
+
+            <li className="pt-2">
               <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-1 block rounded-md bg-brand-red px-2 py-2 text-center text-sm font-semibold text-primary-foreground"
+                className="flex items-center justify-center gap-2.5 rounded-lg bg-brand-red px-4 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-all duration-200 hover:opacity-90"
               >
-                Fale no WhatsApp
+                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/15">
+                  <Phone className="h-3.5 w-3.5" />
+                </span>
+
+                Solicitar cotação
               </a>
             </li>
+
           </ul>
         </nav>
       )}
